@@ -1,0 +1,120 @@
+/* 
+Універсальний селектор
+Селектор тега
+Селектор id
+Селектор класа
+Селектор нащадка
+Дочірній селектор
+*/
+
+/* Універсальний селектор */
+
+/* 
+* {
+  color: teal;
+}
+*/
+
+/* Селектор тега */
+/* h1 {
+  color: teal;
+}
+
+p {
+  color: tomato;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+} */
+
+/* Селектор id */
+/* #main-title {
+  color: teal;
+}
+
+#first-description,
+#second-description {
+  color: tomato;
+} */
+
+/* Селектор класа */
+/* .main-title {
+  color: teal;
+}
+
+.description {
+  color: tomato;
+} */
+
+/* Селектор нащадка */
+/* .first-section .list-link {
+  color: teal;
+}
+
+.second-section .list-link {
+  color: tomato;
+} */
+
+/* Дочірній селектор */
+/* .submenu > li {
+  border: 1px solid red;
+} */
+
+/* .main-title {
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-title {
+    font-size: 46px;
+  }
+} */
+
+/* 10 */
+/* .main-title {
+  color: teal;
+} */
+
+/* 100 */
+/* #main-title {
+  color: tomato;
+} */
+
+/* 1 */
+/* h1 {
+  color: aqua;
+} */
+
+/* 11 */
+/* body .main-title {
+  color: yellowgreen;
+} */
+
+/* body {
+  font-size: 40px;
+  color: tomato;
+}
+
+a {
+  color: currentColor;
+  background-color: teal;
+} */
+
+/* .main-title {
+  color: tomato;
+}
+
+.main-title span {
+  border: 1px solid currentColor;
+} */

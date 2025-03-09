@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 418px;
+  padding-left: 31px;
+  padding-right: 31px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

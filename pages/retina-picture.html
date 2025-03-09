@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retina picture</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/retina-picture.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <picture>
+        <source
+          srcset="../images/retina-picture/img-desktop.jpg 1x, ../images/retina-picture/img-desktop@2x.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="../images/retina-picture/img-tablet.jpg 1x, ../images/retina-picture/img-tablet@2x.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="../images/retina-picture/img-mobile.jpg 1x, ../images/retina-picture/img-mobile@2x.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="../images/retina-picture/img-mobile.jpg" alt="retina image" />
+      </picture>
+    </div>
+  </body>
+</html>

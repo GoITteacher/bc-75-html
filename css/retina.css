@@ -1,0 +1,108 @@
+body {
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+  margin-bottom: 40px;
+}
+
+/* 
+1x - 96dpi
+2x - 192dpi
+3x - 288dpi
+*/
+
+.hero {
+  max-width: 375px;
+  min-height: 211px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url('../images/retina/bg-mobile.jpg');
+  background-size: cover;
+}
+
+/* 
+screen
+0px - 767px
+2x +
+*/
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../images/retina/bg-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    min-height: 432px;
+
+    background-image: url('../images/retina/bg-tablet.jpg');
+  }
+}
+
+/* 
+screen
+768px +
+2x +
+*/
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../images/retina/bg-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1200px;
+    min-height: 675px;
+
+    background-image: url('../images/retina/bg-desktop.jpg');
+  }
+}
+
+/* 
+screen
+1200px +
+2x +
+*/
+@media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../images/retina/bg-desktop@2x.jpg');
+  }
+}
+
+/* .hero {
+  max-width: 1200px;
+  min-height: 675px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url('../images/retina/bg-desktop.jpg');
+  background-size: cover;
+} */
+
+.team-section {
+  padding: 50px 0;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}

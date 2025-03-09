@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <form class="order-form">
+      <label class="order-form-field-label" for="user-first-name">
+        Your first name<sup class="required-color">*</sup>
+      </label>
+      <input
+        class="order-form-input"
+        id="user-first-name"
+        type="text"
+        placeholder="Oleksii"
+        required
+        name="user-name"
+        pattern="[a-zA-Zа-яА-ЯіІїЇєЄʼґҐ]+"
+      />
+
+      <label class="order-form-field-label" for="user-email">
+        Your email<sup class="required-color">*</sup>
+      </label>
+      <input
+        class="order-form-input"
+        id="user-email"
+        type="email"
+        placeholder="test@gmail.com"
+        required
+        name="user-email"
+      />
+
+      <label class="order-form-field-label" for="user-phone">
+        Your phone number<sup class="required-color">*</sup>
+      </label>
+      <input
+        class="order-form-input"
+        id="user-phone"
+        type="tel"
+        placeholder="xxx-xxx-xx-xx"
+        required
+        name="user-phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+      />
+
+      <fieldset class="order-form-fieldset">
+        <legend class="order-form-legend">Pizza size</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="pizza-size" value="size-s" />
+              <span>s</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="pizza-size" value="size-m" />
+              <span>m</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="pizza-size" value="size-l" />
+              <span>l</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="order-form-fieldset">
+        <legend class="order-form-legend">Additional ingredients</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="additional-ingredient" value="cheese" />
+              <span>cheese</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="additional-ingredient" value="mushrooms" />
+              <span>mushrooms</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="additional-ingredient" value="peperoni" />
+              <span>peperoni</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <label class="order-form-field-label" for="user-comment">Your comment</label>
+      <textarea
+        class="order-form-comment"
+        name="user-comment"
+        id="user-comment"
+        placeholder="Your message"
+      ></textarea>
+
+      <div class="order-form-city-wrapper">
+        <label for="user-city">Select your city</label>
+        <select name="user-city" id="user-city">
+          <optgroup label="Kyiv region">
+            <option value="Kyiv">Kyiv</option>
+            <option value="Irpin">Irpin</option>
+            <option value="Bycha">Bycha</option>
+          </optgroup>
+
+          <optgroup label="Poltava region">
+            <option value="Poltava">Poltava</option>
+            <option value="Kremenchyk">Kremenchyk</option>
+            <option value="Globino">Globino</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="privacy-policy-wrapper">
+        <input
+          class="privacy-policy-checkbox visually-hidden"
+          id="privacy-policy"
+          type="checkbox"
+        />
+        <label class="privacy-policy-label" for="privacy-policy">
+          <span class="privacy-policy-custom-checkbox"></span>
+          I accept the terms and conditions of the <a href="">Privacy Policy</a>
+        </label>
+      </div>
+
+      <div class="order-form-btn-wrapper">
+        <button class="order-form-btn order-form-btn-submit" type="submit">Submit</button>
+        <button class="order-form-btn order-form-btn-reset" type="reset">Clear</button>
+      </div>
+    </form>
+  </body>
+</html>

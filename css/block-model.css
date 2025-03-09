@@ -1,0 +1,120 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.main-title {
+  background-color: teal;
+  margin-bottom: 40px;
+}
+
+.products {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: teal;
+}
+
+.about-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.page-header {
+  background-color: yellowgreen;
+}
+
+/* 
+an + b
+
+a - довільне число
+n - лічильник, який починається з 0 і постійно збільшується на 1
+b - довільне число
+*/
+
+/* 
+2n + 1 - odd
+
+2 * 0 + 1 = 1;
+2 * 1 + 1 = 3;
+2 * 2 + 1 = 5;
+2 * 3 + 1 = 7;
+*/
+
+/* 
+2n - even
+
+2 * 0 = 0;
+2 * 1 = 2;
+2 * 2 = 4;
+2 * 3 = 6;
+2 * 4 = 8;
+*/
+
+/* 
+-n + 3
+
+-0 + 3 = 3;
+-1 + 3 = 2;
+-2 + 3 = 1;
+-3 + 3 = 0;
+*/
+
+/* 
+n + 3
+
+0 + 3 = 3;
+1 + 3 = 4;
+2 + 3 = 5;
+3 + 3 = 6;
+*/
+
+/* .products-list-item:not(.some-class) {
+  border: 1px solid yellowgreen;
+} */
+
+.products-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.products-list {
+  margin-bottom: 40px;
+}
+
+.products-list-item:first-child .products-list-img {
+  border: 4px solid yellowgreen;
+}

@@ -17,4 +17,5 @@
 1. [emmet шпора](https://docs.emmet.io/cheat-sheet/)
 2. [перевірка вкладеності тегів](https://caninclude.glitch.me/)
 3. [HTML специфікація](https://html.spec.whatwg.org/)
-4. [Собачка](https://picsum.photos/id/237/200/300)
+4. [HTML+CSS+JS](https://d2dkqamqz2k831.cloudfront.net/posts/338-1733217432633.jpg)
+5. [Собачка](https://picsum.photos/id/237/200/300)

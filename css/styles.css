@@ -9,14 +9,117 @@
 
 /*!================================================ */
 /* Універсальний селектор */
+
+/* * {
+  border: 1px solid black;
+} */
+
 /*!================================================ */
 /* Селектор тега */
+/* 
+h1 {
+  color: tomato;
+}
+
+li {
+  color: teal;
+}
+
+p {
+  color: blue;
+} */
+
 /*!================================================ */
 /* Селектор id */
+
+/* #first-description {
+  background-color: blue;
+}
+
+#second-description {
+  background-color: yellow;
+} */
+
 /*!================================================ */
 /* Селектор класа */
+
+/* .list {
+  background-color: red;
+}
+
+.list-item {
+  color: red;
+  background-color: black;
+} */
+
 /*!================================================ */
 /* Селектор нащадка */
+
+/* li {
+  border: 1px solid black;
+} */
+
 /*!================================================ */
 /* Дочірній селектор */
+
+/* ul > .item {
+  border: 1px solid red;
+} */
 /*!================================================ */
+
+/* h1.list-item.primary {
+  background-color: teal;
+} */
+
+/*!================================================ */
+/* 
+.description {
+  background-color: silver;
+  color: green;
+}
+
+.description {
+  color: black;
+}
+
+h1 {
+  background-color: yellow;
+  color: red;
+} */
+
+/*!================================================ */
+
+/* 0100 */
+#main-title {
+  color: black;
+}
+
+/* 0010 */
+.main-title {
+  color: green;
+}
+
+/* 0020 */
+.main-title.main-title {
+  color: rgb(91, 124, 91);
+}
+
+/* 0001 */
+h1 {
+  color: blue;
+}
+
+/* 0110 */
+.main-title#main-title {
+  color: green;
+}
+
+/* 0011 */
+h1.main-title {
+  color: red;
+}
+
+/* 0011 */
+h1.main-title {
+  color: blue;
+}

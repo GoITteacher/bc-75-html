@@ -52,3 +52,32 @@ body {
   :focus
   :active
 */
+
+/* a:hover {
+  background-color: silver;
+} */
+
+/* nav a:hover {
+  color: red;
+} */
+
+.header .navigation-list:hover {
+  background-color: rgb(120, 181, 118);
+}
+
+/* 
+#my-elem:hover{
+
+} */
+
+/*!================================================ */
+
+.navigation-list-link:focus {
+  background-color: red;
+}
+
+/*!================================================ */
+
+.navigation-list-link:active {
+  background-color: rgb(21, 0, 255);
+}

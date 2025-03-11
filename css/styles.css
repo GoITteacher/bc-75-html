@@ -1,10 +1,37 @@
 /* =============== Common Styles =============== */
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
 /* =============== /Common Styles =============== */
 
 /*!===============================================*/
 
 /* =============== Header Styles =============== */
+
+.site-logo {
+  font-size: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.03em;
+  color: #111;
+}
 
 /* =============== /Header Styles =============== */
 

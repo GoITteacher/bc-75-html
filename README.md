@@ -15,3 +15,10 @@
    - flex-basis (початкова ширина);
    - order (порядок розташування елементів на головній осі);
    - align-self (вирівнювання елемента по поперечній осі);
+
+---
+
+# Корисні посилання
+
+- [Tower Defence Flex BOX](http://www.flexboxdefense.com/)
+- [Flex BOX froggy](https://flexboxfroggy.com/#ru)

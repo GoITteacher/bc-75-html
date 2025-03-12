@@ -1,0 +1,157 @@
+.page-header * {
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*!=====================================*/
+/* .main-title {
+  margin-bottom: 16px;
+  background-color: aqua;
+}
+
+.hero-description {
+  width: 300px;
+  border: 10px solid teal;
+} */
+
+/*!=====================================*/
+
+/* .products {
+  background-color: teal;
+  padding-bottom: 50px;
+}
+
+.about-us {
+  padding-top: 50px;
+} */
+
+/*!=====================================*/
+
+/* .products-list-item {
+  margin: 10px;
+  width: fit-content;
+}
+
+.products-list-item img {
+  width: 150px;
+  height: auto;
+} */
+
+/* .products-list-item:first-child {
+  border: 10px solid black;
+} */
+/* .products-list-item:last-child {
+  border: 10px solid black;
+  margin-bottom: 50px;
+} */
+/* .products-list-item:nth-child(3) {
+  border: 10px solid black;
+} */
+
+/* an + b */
+/*
+a - довільне число
+n - лічильник який рахує з 0 і збільшується на 1
+b - довільне число
+
+
+1 * n + 3
+1 * 0 + 3 = 3
+1 * 1 + 3 = 4
+1 * 2 + 3 = 5
+
+
+3n + 1;
+
+
+3 * 0 + 1 = 1
+3 * 1 + 1 = 4
+3 * 2 + 1 = 7
+3 * 3 + 1 = 10
+
+*/
+
+/* 
+2n + 1 - odd
+
+2 * 0 + 1 = 1;
+2 * 1 + 1 = 3;
+2 * 2 + 1 = 5;
+2 * 3 + 1 = 7;
+*/
+
+/* 
+2n - even
+
+2 * 0 = 0;
+2 * 1 = 2;
+2 * 2 = 4;
+2 * 3 = 6;
+2 * 4 = 8;
+*/
+
+/* .products-list-item:nth-child(2n) {
+  border: 10px solid black;
+}
+
+.products-list-item:nth-child(2n + 1) {
+  border: 10px solid orange;
+} */
+
+/* 
+.products-list-item:nth-child(2n) {
+  border: 10px solid orange;
+} */
+
+/*!=====================================*/
+
+/* .page-header {
+  background-color: teal;
+} */
+
+/* .products {
+  background-color: teal;
+}
+
+.container {
+  max-width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: content-box;
+} */
+
+/*!=====================================*/

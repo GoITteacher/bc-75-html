@@ -1,12 +1,31 @@
 /* =============== Common Styles =============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul,
 ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 button {
@@ -31,9 +50,31 @@ body {
   text-transform: uppercase;
   color: #111111;
 }
+
+.container {
+  max-width: 1168px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* =============== /Common Styles =============== */
 
 /* =============== Header Styles =============== */
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu {
+  display: flex;
+  column-gap: 24px;
+}
+
 .site-logo {
   font-weight: 700;
   font-size: 18px;
@@ -57,11 +98,36 @@ body {
 /* =============== /Header Styles =============== */
 
 /* =============== Hero Styles =============== */
+
+.hero {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #11111168;
+  padding-top: 380px;
+  padding-bottom: 40px;
+  color: #ffff;
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+
+.hero-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .main-title {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
+  width: 484px;
+  margin-bottom: 32px;
+}
+
+.hero-bottom-block {
+  display: flex;
+  align-items: center;
 }
 
 .buy-now-btn {
@@ -70,6 +136,10 @@ body {
   background-color: #fd9222;
   color: #ffffff;
   border: none;
+
+  border-radius: 100px;
+  padding: 14px 40px;
+  height: 45px;
 }
 
 .buy-now-btn:hover,
@@ -81,6 +151,10 @@ body {
 .how-made-link {
   font-size: 14px;
   font-weight: 600;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  height: 45px;
 }
 
 .how-made-link:hover,
@@ -93,6 +167,7 @@ body {
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  margin-left: auto;
 }
 
 .scroll-down-link:hover,

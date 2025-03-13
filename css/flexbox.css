@@ -9,6 +9,11 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 ul,
 ol {
   padding-left: 0;
@@ -52,6 +57,41 @@ ol {
   padding: 10px;
 }
 
+/*!=====================================*/
+
+.item-card-first {
+  width: 150px;
+  border: 1px solid teal;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.item-card img {
+}
+
+.item-card-second {
+  width: 150px;
+  border: 1px solid teal;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.card-img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid black;
+
+  margin: 20px auto;
+}
+
+.card-img img {
+  object-fit: contain;
+  height: 100%;
+  min-height: 100%;
+}
 /*!=====================================*/
 
 .benefits-list {
@@ -117,4 +157,30 @@ ol {
 .chat-message-list {
   border: 10px solid teal;
   flex-grow: 1;
+}
+
+/*!=====================================*/
+
+/* Для WebKit (Chrome, Edge, Safari, Opera) */
+.benefits-list::-webkit-scrollbar {
+  width: 25px; /* Ширина вертикального скролу */
+  height: 10px; /* Висота горизонтального скролу */
+}
+
+/* Фонова частина скролбару */
+.benefits-list::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Світлий фон */
+  border-radius: 10px; /* Закруглення */
+}
+
+/* Рухома частина (повзунок) */
+.benefits-list::-webkit-scrollbar-thumb {
+  background: #ef4c4c; /* Колір повзунка */
+  border-radius: 10px;
+  border: 2px solid #f1f1f1; /* Додає контраст */
+}
+
+/* При наведенні */
+.benefits-list::-webkit-scrollbar-thumb:hover {
+  background: #ff8c00;
 }

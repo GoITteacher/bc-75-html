@@ -42,21 +42,79 @@ ol {
 
 .benefits-list {
   border: 10px solid #000000;
-  width: 700px;
+  /* width: 700px; */
+
+  width: 60vw;
 }
 
 .benefits-list-item {
-  min-width: 300px;
   width: 300px;
-  border: 1px solid tomato;
+  padding: 10px;
 }
 
 /*!=====================================*/
 
 .benefits-list {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: center; */
+  display: flex;
+  /* flex-direction: column; */
   /* align-items: stretch; */
-  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  /* place-content: center center; */
+
+  height: 500px;
+  overflow: auto;
+}
+
+.benefits-list-item:not(:last-child) {
+  border-right: 5px solid tomato;
+}
+
+.benefits-list-item-first {
+  /* order: 3; */
+  /* flex-grow: 1; */
+  /* align-self: ;*/
+
+  /* place-self: center center; */
+}
+
+.benefits-list-item-second {
+  /* order: 1; */
+  /* flex-shrink: 0.5; */
+  /* flex-basis: 150px; */
+  /* align-self: center; */
+}
+
+.benefits-list-item-third {
+  /* order: 2; */
+  /* flex-grow: 1; */
+  /* flex-shrink: ; */
+  /* flex-basis: ; */
+  /* flex */
+  /* align-self: ; */
+  /* place-self: ; */
+  /* justify-self: ; */
+  /* align-self: flex-end; */
+}
+
+/*!=====================================*/
+.online-chat {
+  border: 10px solid black;
+  height: 700px;
+  max-width: 1100px;
+  margin: 10px auto;
+  display: flex;
+}
+
+.chat-contacts {
+  width: 300px;
+  border: 1px solid tomato;
+}
+
+.chat-message-list {
+  border: 10px solid teal;
+  flex-grow: 1;
 }

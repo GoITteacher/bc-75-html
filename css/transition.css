@@ -19,12 +19,20 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  width: 300px;
+
+  /* transition-property: width;
+  transition-duration: 4000ms;
+  transition-timing-function: ease;
+  transition-delay: 1000ms; */
+  transition: all 1000ms linear;
 }
 
-.btn:hover,
+/* .btn:hover,
 .btn:focus {
+  width: 500px;
   background-color: #e74c3c;
-}
+} */
 
 /* transition-property: background-color;
   transition-duration: 500ms;

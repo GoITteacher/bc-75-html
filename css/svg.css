@@ -38,4 +38,21 @@ a {
   height: 50px;
   border-radius: 50%;
   background-color: #ffffff;
+  fill: red;
 }
+/* 
+.social-list-link:focus,
+.social-list-link:hover {
+  fill: teal;
+} */
+
+/* 
+.social-list-icon {
+  fill: red;
+  width: 30px;
+  height: 30px;
+} */
+
+/* .social-list-icon:focus {
+  fill: teal;
+} */

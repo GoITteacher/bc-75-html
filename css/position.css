@@ -3,6 +3,8 @@ body {
 }
 
 .wrapper {
+  position: relative;
+  margin-top: 100px;
   width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -10,8 +12,6 @@ body {
 }
 
 .container {
-  position: relative;
-
   width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -30,20 +30,33 @@ body {
 .red {
   position: sticky;
   top: 0;
-
   width: 140px;
   height: 140px;
   background-color: #e74c3c;
 }
 
 .blue {
+  /* position: relative; */
+
+  /* bottom: 10px; */
+  /* right: 10px; */
+
   width: 100px;
   height: 100px;
+  z-index: 10;
   background-color: rgba(0, 0, 255, 0.5);
 }
 
 .yellow {
-  width: 80px;
+  /* position: fixed; */
+
+  /* right: 50%;
+  bottom: 50%;
+
+  transform: translate(50%, 50%); */
+
+  width: 100px;
   height: 80px;
+  z-index: 5;
   background-color: #f1c40f;
 }

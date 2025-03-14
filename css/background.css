@@ -1,4 +1,4 @@
-.background {
+/* .background {
   width: 900px;
   height: 500px;
   margin-left: auto;
@@ -6,11 +6,19 @@
   padding: 20px;
   border: 10px dashed tomato;
   color: #ffffff;
-}
+  background-color: #353535;
+
+  background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  background-origin: border-box;
+  background-clip: border-box;
+} */
 
 /* 
 
-  background-color: #303030;
+  
   background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url('../images/bg.jpg');
   background-repeat: no-repeat;
   background-position: left top;

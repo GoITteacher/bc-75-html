@@ -31,3 +31,29 @@ ol {
 }
 
 /*!==============================================*/
+/* 
+.title::before {
+  content: '@';
+  color: red;
+  background-color: #fff;
+} */
+.title::before {
+  content: '';
+  /* background: #000; */
+  display: inline;
+  height: 1px;
+  width: 100px;
+  border-top: 1px dotted black;
+}
+
+.title {
+  width: fit-content;
+}
+
+.title::after {
+  content: '';
+  background: #000;
+  display: block;
+  height: 5px;
+  width: 100%;
+}

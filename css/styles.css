@@ -80,17 +80,11 @@ body {
 /* =============== /Common Styles =============== */
 
 /* =============== Header Styles =============== */
-.page-header-container {
-  display: flex;
-  align-items: center;
-  column-gap: 90px;
-}
 
 .page-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-grow: 1;
 }
 
 .menu {
@@ -99,18 +93,11 @@ body {
 }
 
 .site-logo {
-  display: flex;
-  align-items: center;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
-}
-
-.site-logo-icon {
-  margin-left: 4px;
 }
 
 .menu-link {
@@ -122,32 +109,12 @@ body {
   color: #111;
   padding-top: 30px;
   padding-bottom: 30px;
-  transition: color 250ms linear;
 }
 
 .menu-link:hover,
 .menu-link:focus {
   color: #fd9222;
 }
-
-.social-list {
-  display: flex;
-  column-gap: 18px;
-  line-height: 0;
-}
-
-.social-list-link {
-  display: block;
-  fill: none;
-  stroke: #111111;
-  transition: stroke 250ms linear;
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  stroke: #fd9222;
-}
-
 /* =============== /Header Styles =============== */
 
 /* =============== Hero Styles =============== */
@@ -160,8 +127,6 @@ body {
   border-radius: 30px;
   color: #ffffff;
   background-color: #1e1823;
-  background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url('../images/hero/bg.jpg');
-  background-size: cover;
 }
 
 .hero-container {
@@ -194,7 +159,6 @@ body {
   color: #ffffff;
   border: none;
   margin-right: 14px;
-  transition: color 250ms linear, background-color 250ms linear;
 }
 
 .buy-now-btn:hover,
@@ -209,9 +173,9 @@ body {
   padding: 14px 40px;
   border: 1px solid #fff;
   border-radius: 100px;
+
   font-size: 14px;
   font-weight: 600;
-  transition: color 250ms linear, border-color 250ms linear;
 }
 
 .how-made-link:hover,
@@ -221,39 +185,16 @@ body {
 }
 
 .scroll-down-link {
-  display: flex;
-  align-items: center;
-  column-gap: 14px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
   margin-left: auto;
-  fill: #fd9222;
-  color: #ffffff;
-  transition: color 250ms linear, fill 250ms linear;
 }
 
 .scroll-down-link:hover,
 .scroll-down-link:focus {
   color: #fd9222;
-  fill: #ffffff;
-}
-
-.scroll-down-icon-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  transition: background-color 250ms linear;
-}
-
-.scroll-down-link:hover .scroll-down-icon-wrapper,
-.scroll-down-link:focus .scroll-down-icon-wrapper {
-  background-color: #fd9222;
 }
 /* =============== /Hero Styles =============== */
 
@@ -276,30 +217,7 @@ body {
 }
 
 .benefits-list-item {
-  position: relative;
   width: calc((100% - 2 * 88px) / 3);
-}
-
-.benefits-list-item:not(:last-child)::after {
-  position: absolute;
-  top: 50%;
-  right: -18px;
-  width: 1px;
-  height: 124px;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  content: '';
-}
-
-.benefits-list-icon-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 62px;
-  height: 62px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  margin-bottom: 22px;
 }
 
 .benefits-list-title {
@@ -342,13 +260,11 @@ body {
 }
 
 .ingredients-list-item {
-  position: relative;
   width: calc((100% - 3 * 24px) / 4);
   padding: 28px 32px;
   border: 1px solid #fd9222;
   border-radius: 15px;
   background-color: #ffffff;
-  overflow: hidden;
 }
 
 /* 
@@ -389,69 +305,6 @@ body {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
-
-.ingredient-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  transform: translateY(100%);
-  background-color: #ffffff;
-  border-radius: 15px;
-  color: #111111;
-  overflow-y: auto;
-  transition: transform 250ms linear;
-}
-
-.ingredient-overlay::after {
-  position: sticky;
-  bottom: -20px;
-  display: block;
-  width: 100%;
-  height: 20px;
-  background-color: #ffffff;
-  content: '';
-}
-
-.ingredients-list-item:hover .ingredient-overlay {
-  transform: translateY(0%);
-}
-
-.ingredient-overlay-title {
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-.overlay-tags-list {
-  display: flex;
-  margin-bottom: 14px;
-  column-gap: 6px;
-}
-
-.overlay-tags-list-item {
-  font-size: 10px;
-  line-height: 1.2;
-  border: 1px solid #fd9222;
-  border-radius: 35px;
-  padding: 5px 16px;
-  background-color: #fafafa;
-}
-
-.overlay-tags-list-item:first-child {
-  background-color: #fd9222;
-  color: #ffffff;
-}
-
-.ingredient-overlay-text {
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-}
 /* =============== /Ingredients Styles =============== */
 
 /* =============== How made Styles =============== */
@@ -485,24 +338,10 @@ body {
 }
 
 .how-made-list-item {
-  position: relative;
-  padding-left: 16px;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111111;
-}
-
-.how-made-list-item::before {
-  position: absolute;
-  top: 5px;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #eceded;
-  border-radius: 50%;
-  background-color: #4c4c4c;
-  content: '';
 }
 
 .how-made-list-item:not(:last-child) {
@@ -517,7 +356,7 @@ body {
 }
 
 .reviews-title {
-  margin-bottom: 91px;
+  margin-bottom: 50px;
 }
 
 .reviews-list {
@@ -528,19 +367,11 @@ body {
 }
 
 .reviews-list-item {
-  position: relative;
   width: calc((100% - 2 * 28px) / 3);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   background-color: #ffffff;
   padding: 56px 24px 24px 24px;
-}
-
-.reviews-list-avatar {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .reviews-list-fullname {
@@ -569,10 +400,10 @@ body {
   border-radius: 100px;
   padding: 14px 40px;
   background-color: transparent;
+
   font-size: 18px;
   font-weight: 600;
   color: #111111;
-  transition: color 250ms linear, background-color 250ms linear;
 }
 
 .leave-review-btn:hover,
@@ -627,7 +458,6 @@ body {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
-  transition: color 250ms linear;
 }
 
 .contact-list-link:hover,
@@ -642,11 +472,5 @@ body {
 
 .page-footer-bottom-block .menu-link {
   color: #ffffff;
-  transition: color 250ms linear;
-}
-
-.page-footer-bottom-block .menu-link:hover,
-.page-footer-bottom-block .menu-link:focus {
-  color: #fd9222;
 }
 /* =============== /Footer Styles =============== */

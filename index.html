@@ -11,5 +11,120 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body></body>
+  <body>
+    <form class="order-form">
+      <label class="order-form-field-label"
+        >Firstname<sup class="required-color">*</sup>
+
+        <input
+          type="text"
+          class="order-form-input"
+          placeholder="Borys"
+          id="user-first-name"
+          required
+          name="user-first-name"
+        />
+      </label>
+
+      <label class="order-form-field-label" for="user-email"
+        >Email<sup class="required-color">*</sup></label
+      >
+      <input
+        id="user-email"
+        type="text"
+        class="order-form-input"
+        placeholder="yourmail@gmail.com"
+        required
+        name="user-email"
+      />
+
+      <label class="order-form-field-label" for="user-phone-number"
+        >Phone Number<sup class="required-color">*</sup></label
+      >
+      <input
+        id="user-phone-number"
+        type="tel"
+        class="order-form-input"
+        placeholder="xxx-xxx-xxxx"
+        required
+        name="phonenumber"
+      />
+
+      <!-- <input type="color" name="user-hair-color" required /> -->
+      <!-- <input type="date" name="user-hair-color" required /> -->
+      <!-- <input type="datetime" name="user-hair-color" required /> -->
+      <!-- <input type="file" name="user-hair-color" required /> -->
+      <!-- <input type="image" name="user-hair-color" required /> -->
+      <!-- <input type="password" name="user-hair-color" required /> -->
+      <!-- <input type="range" min="0" max="100" value="50" /> -->
+      <!-- <input type="number" min="0" max="100" value="50" /> -->
+
+      <fieldset class="order-form-fieldset">
+        <legend class="order-form-legend">Pizza Size</legend>
+        <ul>
+          <li><input type="radio" name="pizza-size" value="size-s" checked /> <span>s</span></li>
+          <li><input type="radio" name="pizza-size" value="size-m" /> <span>m</span></li>
+          <li><input type="radio" name="pizza-size" value="size-l" /> <span>l</span></li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="order-form-fieldset">
+        <legend class="order-form-legend">Ingredients</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="ingredients" value="cheese" />
+            <span>cheese</span>
+          </li>
+          <li>
+            <input type="checkbox" name="ingredients" value="paperoni" /> <span>paperoni</span>
+          </li>
+          <li>
+            <input type="checkbox" name="ingredients" value="mashrooms" /> <span>mashrooms</span>
+          </li>
+        </ul>
+      </fieldset>
+
+      <textarea
+        name="message"
+        class="order-form-comment"
+        maxlength="10"
+        placeholder="Message"
+      ></textarea>
+
+      <div class="order-form-city-wrapper">
+        <label for="user-city">Select your city</label>
+        <select name="user-city" id="user-city">
+          <optgroup label="Kyiv region">
+            <option value="kyiv">Київ</option>
+            <option value="iprin">Irpin</option>
+            <option value="bycha">Bycha</option>
+          </optgroup>
+
+          <optgroup label="Poltava region">
+            <option value="poltava">Poltava</option>
+            <option value="kremenchyk">Kremenchyk</option>
+            <option value="globino">Globino</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="privacy-policy-wrapper">
+        <input type="checkbox" id="test-checkbox" class="visually-hidden privacy-policy-checkbox" />
+
+        <label class="privacy-policy-label" for="test-checkbox">
+          <span class="privacy-policy-custom-checkbox">
+            <svg width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </span>
+          <span>Test Checkbox</span>
+        </label>
+      </div>
+
+      <div class="order-form-btn-wrapper">
+        <button class="order-form-btn order-form-btn-submit" type="submit">Submit</button>
+        <button class="order-form-btn order-form-btn-reset" type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
 </html>

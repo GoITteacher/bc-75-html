@@ -160,11 +160,7 @@ body {
   border-radius: 30px;
   color: #ffffff;
   background-color: #1e1823;
-  background-image: linear-gradient(
-      rgba(30, 24, 35, 0.4),
-      rgba(30, 24, 35, 0.4)
-    ),
-    url('../images/hero/bg.jpg');
+  background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url('../images/hero/bg.jpg');
   background-size: cover;
 }
 
@@ -640,11 +636,8 @@ body {
 }
 
 .page-footer-bottom-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 24px;
-  padding-bottom: 50px;
+  padding-bottom: 86px;
 }
 
 .page-footer-bottom-block .menu-link {
@@ -656,70 +649,26 @@ body {
 .page-footer-bottom-block .menu-link:focus {
   color: #fd9222;
 }
-
-.subscribe-form {
-  display: flex;
-  column-gap: 8px;
-}
-
-.subscribe-form-field {
-  width: 313px;
-  height: 52px;
-  padding-left: 24px;
-  padding-right: 24px;
-  font-size: 18px;
-  letter-spacing: -0.02em;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 30px;
-  color: #ffffff;
-  background-color: transparent;
-  transition: border-color 250ms linear;
-}
-
-.subscribe-form-field::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.subscribe-form-field:focus {
-  outline: transparent;
-  border-color: #fd9222;
-}
-
-.subscribe-form-submit-btn {
-  min-width: 137px;
-  font-weight: 600;
-  font-size: 14px;
-  border-radius: 100px;
-  padding: 16px 20px;
-  border: none;
-  background-color: #fd9222;
-  color: #ffffff;
-  transition: background-color 250ms linear, color 250ms linear;
-}
-
-.subscribe-form-submit-btn:hover,
-.subscribe-form-submit-btn:focus {
-  background-color: #fcf1e0;
-  color: #fd9222;
-}
-
 /* =============== /Footer Styles =============== */
 
-/* =============== Backdrop Styles =============== */
+/* ================================================*/
+
 .backdrop {
   position: fixed;
-  top: 0;
   left: 0;
-  z-index: 9999999;
+  top: 0;
+
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #1111119b;
+
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms linear;
+
+  backdrop-filter: blur(10px);
 }
 
-.backdrop.is-open {
+.backdrop.is-visible {
   opacity: 1;
   pointer-events: auto;
 }
@@ -728,45 +677,44 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 517px;
-  height: 95%;
-  max-height: 794px;
-  padding: 40px;
   transform: translate(-50%, -50%);
+
+  padding: 40px;
   border-radius: 15px;
-  background-color: #fafafa;
+  width: 517px;
+  height: 90%;
+  max-height: 794px;
   overflow-y: auto;
+  background: #fafafa;
 }
 
 .modal-close-btn {
   position: absolute;
-  top: 24px;
   right: 24px;
-  padding: 0;
-  line-height: 0;
-  border: none;
+  top: 24px;
+  stroke: black;
+  fill: black;
+
   background-color: transparent;
-  stroke: #111111;
-  transition: stroke 250ms linear;
+  border: none;
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  stroke: #fd9222;
-}
-/* =============== /Backdrop Styles =============== */
-
-/* =============== Review form Styles =============== */
-.modal-slogan {
+.modal-title {
   max-width: 298px;
   margin-bottom: 40px;
   font-weight: 600;
   font-size: 24px;
-  line-height: 1.17;
+  line-height: 1.16667;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #111111;
+  color: #111;
 }
+
+.modal-title > span {
+  color: #fd9222;
+}
+
+/* ================================================*/
 
 .review-form-field-wrapper {
   margin-bottom: 18px;
@@ -774,6 +722,7 @@ body {
 
 .review-form-field-label {
   display: block;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
@@ -784,70 +733,93 @@ body {
   position: relative;
 }
 
-.review-form-field {
+.review-form-input {
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+  border-radius: 13px;
+  padding: 22px 24px;
   width: 100%;
   height: 68px;
+  outline: transparent;
   padding-left: 62px;
+
+  font-weight: 400;
   font-size: 18px;
   letter-spacing: -0.02em;
-  color: #111111;
-  border: 1px solid rgba(17, 17, 17, 0.05);
-  border-radius: 13px;
-  background-color: transparent;
+
   transition: border-color 250ms linear;
 }
 
-.review-form-field:focus {
-  outline: transparent;
+.review-form-input:focus {
   border-color: #fd9222;
 }
 
-.review-form-field-icon {
+.review-form-input-icon {
   position: absolute;
-  top: 50%;
   left: 24px;
+  top: 50%;
   transform: translateY(-50%);
+  stroke: black;
   fill: none;
-  stroke: #404040;
   transition: stroke 250ms linear;
 }
 
-.review-form-field:focus + .review-form-field-icon {
+.review-form-input:focus + .review-form-input-icon {
   stroke: #fd9222;
 }
-
-/* .review-form-input-wrapper:focus-within .review-form-field-icon {
-  stroke: #fd9222;
-} */
 
 .review-form-comment {
-  width: 100%;
-  height: 137px;
-  font-size: 18px;
-  letter-spacing: -0.02em;
-  color: #111111;
-  border: 1px solid rgba(17, 17, 17, 0.05);
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
   padding: 22px 24px;
-  background-color: transparent;
+  width: 436px;
+  height: 137px;
   resize: none;
+  outline: transparent;
   transition: border-color 250ms linear;
 }
-
-.review-form-comment::placeholder {
-  color: rgba(64, 64, 64, 0.3);
-}
-
 .review-form-comment:focus {
-  outline: transparent;
   border-color: #fd9222;
+}
+.review-form-comment::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
 }
 
 .review-form-checkbox-wrapper {
   margin-bottom: 40px;
 }
 
+.review-form-custom-checkbox {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  margin-right: 12px;
+}
+
+.review-form-checkbox-icon {
+  opacity: 0;
+}
+
+.review-form-privacy-checkbox:checked + .review-form-policy-label .review-form-custom-checkbox {
+  background-color: #fd9222;
+}
+
+.review-form-privacy-checkbox:checked + .review-form-policy-label .review-form-checkbox-icon {
+  opacity: 1;
+}
+
 .review-form-policy-label {
+  cursor: pointer;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
@@ -855,52 +827,48 @@ body {
 
 .review-form-privacy-link {
   text-decoration: underline;
+  text-decoration-skip-ink: none;
   color: #fd9222;
-}
-
-.review-form-custom-checkbox {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  border: 1px solid rgba(17, 17, 17, 0.14);
-  border-radius: 6px;
-  fill: transparent;
-  cursor: pointer;
-  margin-right: 12px;
-}
-
-.review-form-policy-checkbox:checked
-  + .review-form-policy-label
-  .review-form-custom-checkbox {
-  background-color: #fd9222;
-  border-color: #fd9222;
-  fill: #ffffff;
-}
-
-.review-form-policy-checkbox:focus
-  + .review-form-policy-label
-  .review-form-custom-checkbox {
-  outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
 .review-form-submit-btn {
-  min-width: 117px;
+  border-radius: 100px;
+
+  width: 117px;
+  height: 44px;
+  background: #fd9222;
+  border: none;
+
   font-weight: 600;
   font-size: 14px;
-  border-radius: 100px;
-  padding: 14px 20px;
-  border: none;
-  background-color: #fd9222;
-  color: #ffffff;
-  transition: background-color 250ms linear, color 250ms linear;
+  color: #fff;
 }
 
-.review-form-submit-btn:hover,
-.review-form-submit-btn:focus {
-  background-color: #fcf1e0;
-  color: #fd9222;
+/*!==========================================*/
+.review-form-invalid-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  stroke: #e74a3b;
+  opacity: 0;
 }
 
-/* =============== /Review form Styles =============== */
+.review-form-comment:user-invalid {
+  border-color: #e74a3b;
+}
+.review-form-input:user-invalid {
+  border-color: #e74a3b;
+}
+
+.review-form-input:user-invalid + .review-form-input-icon {
+  stroke: #e74a3b;
+}
+
+.review-form-input:user-invalid ~ .review-form-invalid-icon {
+  opacity: 1;
+}
+
+.review-form-required {
+  color: rgba(255, 0, 0, 0.563);
+}

@@ -1,12 +1,107 @@
 /* ========== MIN-WIDTH & MAX-WIDTH ========== */
 
+/* ========== MOBILE FIRST ========== */
+/* 
+body {
+  background-color: tomato;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: teal;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+/* ========== DESCTOP FIRST ========== */
+
+/* width = 768px */
+
+/* body {
+  background-color: tomato;
+}
+
+@media (max-width: 1199px) {
+  body {
+    background-color: teal;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
 /* ========== TYPES ========== */
 /* 
   all
   screen 
   print
 */
+/* 
+body {
+  background-color: tomato;
+  color: white;
+  padding: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: teal;
+    color: white;
+  }
+}
+
+
+@media print {
+  body {
+    padding: 10px;
+    background-color: white;
+    color: black;
+  }
+  button {
+    display: none;
+  }
+  .navigation {
+    display: none;
+  }
+} */
 
 /* ========== AND ========== */
+/*
+screen - true
+700> - true
+<800 - false
+*/
+
+/* @media screen and (min-width: 700px) and (max-width: 800px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  body {
+    background-color: teal;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  body {
+    background-color: aqua;
+  }
+} */
 
 /* ========== OR ========== */
+/* 
+@media screen and (max-width: 767px), screen and (min-width: 1200px) {
+  body {
+    background-color: teal;
+  }
+} */

@@ -1,13 +1,237 @@
 /*!============== MOBILE =============*/
 
 .hero {
-  background-image: linear-gradient(#11111144, #11111144),
+  max-width: 375px;
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+
+  padding-top: 395px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-bottom: 20px;
+
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
     url('../images/hero/hero-bg_mob.jpg');
+
+  background-size: cover;
 }
 
-@media screen and (min-resolution: 68dpi) {
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  max-width: 293px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.hero-bottom-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.hero-bottom-buttons-wrapper {
+  display: flex;
+  column-gap: 14px;
+}
+
+.buy-now-btn {
+  min-width: 120px;
+  height: 41px;
+  padding: 12px 28px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #fd9222;
+  color: #ffffff;
+  border: none;
+  margin-right: 14px;
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+.buy-now-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+.how-made-link {
+  min-width: 159px;
+  height: 41px;
+  padding: 12px 27px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 250ms linear, border-color 250ms linear;
+  color: #fff;
+}
+
+.how-made-link:focus {
+  color: #fd9222;
+  border-color: #fd9222;
+}
+
+.scroll-down-link {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+
+  fill: #fd9222;
+  color: #ffffff;
+  transition: color 250ms linear, fill 250ms linear;
+}
+
+.scroll-down-link:focus {
+  color: #fd9222;
+  fill: #ffffff;
+}
+
+.scroll-down-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 250ms linear;
+}
+
+.scroll-down-link:focus .scroll-down-icon-wrapper {
+  background-color: #fd9222;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url('../images/hero/hero-bg_mob@2x.jpg');
+  }
 }
 
 /*!============== TABLET =============*/
 
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 736px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 671px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url('../images/hero/hero-bg_tab.jpg');
+  }
+
+  .hero-container {
+    max-width: 624px;
+  }
+
+  .main-title {
+    font-size: 28px;
+    line-height: 1.21429;
+  }
+
+  .hero-bottom-block {
+    flex-direction: row;
+  }
+
+  .buy-now-btn {
+    width: 144px;
+    height: 45px;
+    padding: 14px 40px;
+  }
+
+  .how-made-link {
+    width: 144px;
+    height: 45px;
+  }
+
+  .scroll-down-icon-wrapper {
+    width: 38px;
+    height: 38px;
+  }
+
+  .scroll-down-link {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url('../images/hero/hero-bg_tab@2x.jpg');
+  }
+}
+
 /*!============== DESCTOP =============*/
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1168px;
+    padding-top: 381px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url('../images/hero/hero-bg_desk.jpg');
+  }
+
+  .hero-container {
+    max-width: 1056px;
+  }
+
+  .buy-now-btn:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
+  }
+
+  .scroll-down-link:hover {
+    color: #fd9222;
+    fill: #ffffff;
+  }
+
+  .how-made-link:hover {
+    color: #fd9222;
+    border-color: #fd9222;
+  }
+
+  .scroll-down-link:hover .scroll-down-icon-wrapper {
+    background-color: #fd9222;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url('../images/hero/hero-bg-desk@2x.jpg');
+  }
+}

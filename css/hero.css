@@ -1,0 +1,13 @@
+/*!============== MOBILE =============*/
+
+.hero {
+  background-image: linear-gradient(#11111144, #11111144),
+    url('../images/hero/hero-bg_mob.jpg');
+}
+
+@media screen and (min-resolution: 68dpi) {
+}
+
+/*!============== TABLET =============*/
+
+/*!============== DESCTOP =============*/
